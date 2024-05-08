@@ -1,0 +1,17 @@
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+p {
+    color:orange ;
+}
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
