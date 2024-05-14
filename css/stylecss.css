@@ -113,6 +113,8 @@ img {
 }
 .menu {
   display: flex;
+  list-style: none;
+  justify-content: space-between;
   gap: 40px;
   margin-block-start: 1em;
   margin-block-end: 1em;
