@@ -70,6 +70,8 @@ img {
 /*=========== HEADER ===========*/
 
 .page-header {
+  display: block;
+  unicode-bidi: isolate;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -85,6 +87,15 @@ img {
   color: #434455;
   background-color: #ffffff;
 }
+.container.page-header-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .page-navigation {
   display: flex;
   align-items: center;
@@ -220,4 +231,30 @@ img {
 .address-list-link:hover,
 .address-list-link:focus {
   color: #404bbf;
+}
+ul.features-blocks {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.fb-img {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+.fb-img img {
+  padding: 24px 0px;
+}
+ul.features-blocks {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
 }
