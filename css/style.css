@@ -1,21 +1,17 @@
-html {
-  display: block;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
-  background-color: #ffffff;
+  background-color: #fff;
 }
-body {
-  margin: 0;
+
+a {
+  text-decoration: none;
 }
 ul,
 ol {
-  list-style-type: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 h1,
 h2,
@@ -28,19 +24,7 @@ p {
   margin-bottom: 0;
 }
 
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style-type: none;
-}
-
 .link {
-  text-decoration: none;
-}
-a {
-  color: inherit;
   text-decoration: none;
 }
 
@@ -67,7 +51,20 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 /*=========== HEADER ===========*/
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
 
 .page-header {
   display: block;
@@ -77,34 +74,11 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.container {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Roboto", sans-serif;
-  color: #434455;
-  background-color: #ffffff;
-}
-.container.page-header-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.page-navigation {
+.navigation {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box;
-  justify-content: space-between;
-  unicode-bidi: isolate;
 }
-.page-logo {
+.logo {
   color: #4d5ae5;
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -232,6 +206,26 @@ img {
 .address-list-link:focus {
   color: #404bbf;
 }
+/*-------- HERO---------*/
+main {
+  display: block;
+  unicode-bidi: isolate;
+}
+.hero-first-section {
+    background-color: #2e2f42;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 188px;
+    padding-top: 188px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-image.jpg);
+}
+
+/*
 ul.features-blocks {
   display: flex;
   flex-direction: row;
@@ -258,3 +252,4 @@ ul.features-blocks {
   align-items: center;
   gap: 24px;
 }
+
